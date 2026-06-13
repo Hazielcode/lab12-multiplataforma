@@ -2,16 +2,16 @@
 
 Este laboratorio implementa el diseño de una aplicación de inventario, utilizando **componentes de Cupertino** para brindar una apariencia y navegación estilo iOS, y aplicando un renovado **Tema Retro / Cyberpunk**.
 
-## Cambios Implementados (Modo Retro)
+## Resumen de Cambios (Lo que hicimos)
 
-1. **Renombrado de Aplicación:** El nombre del proyecto y los textos visuales cambiaron de `BodegaFMAS` a **`RetroStore`**.
-2. **Paleta de Colores Retro:**
-   - **Fondo General y Superficies:** Tonos morados/azul muy oscuros (`0xFF1A1A2E`, `0xFF16213E`) simulando el espacio o un entorno de terminal retro.
-   - **Colores Principales:** Fucsia Neón (`0xFFFF00FF`) y Cyan (`0xFF00FFFF`) para botones, bordes e íconos.
-   - **Tipografía y Textos:** Implementación de fuente `'Courier'` con color Verde Terminal (`0xFF00FF41`) para resaltar la temática retro/hacker.
+1. **Nuevo Nombre y Marca:** Se renombró la aplicación de `BodegaFMAS` a **`RetroStore`**.
+2. **Transformación Visual (Estilo Cyberpunk/Retro):**
+   - **Fondos Oscuros:** Cambio radical del fondo a tonos morado oscuro y azul marino (`0xFF1A1A2E`, `0xFF16213E`) estilo terminal.
+   - **Tonos Neón:** Uso intenso de **Fucsia Neón** (`0xFFFF00FF`) y **Cyan** (`0xFF00FFFF`) en botones, bordes, íconos y contenedores interactivos.
+   - **Tipografía Hacker:** Se aplicó la fuente `'Courier'` con un texto en color **Verde Terminal** (`0xFF00FF41`) en toda la aplicación para dar esa estética de código clásico.
 3. **Optimización de Compatibilidad:**
-   - Actualización de `pubspec.yaml` para asegurar que el proyecto se ejecute correctamente en el SDK actual.
-   - Corrección de propiedades no compatibles (como `minimumSize` y `.withValues()`) adaptándolas a versiones estables del SDK (`.withOpacity()`).
+   - Corrección de la versión de SDK en `pubspec.yaml` (ajustada a la versión local `^3.5.0` y compatibilidad de `flutter_lints`).
+   - Reemplazo de sintaxis no soportada en versiones previas de Flutter (como `minimumSize` y `.withValues()`) adaptándolas para una compilación exitosa (`.withOpacity()`).
 
 ## Tecnologías y Componentes Utilizados
 
@@ -31,25 +31,25 @@ La aplicación simula el control de inventario llamado **RetroStore**. Permite i
 
 ## Capturas
 
-*(Actualiza las capturas reemplazando los archivos en la carpeta `ScreenShoots` con la nueva interfaz de RetroStore)*
+*(La apariencia actual con el nuevo Modo Retro se encuentra documentada aquí abajo)*
 
 ### Login
-![Captura Login](<ScreenShoots/Captura Login.png>)
+![Captura Login](<ScreenShoots/cap1.png>)
 
 ### Menú Principal
-![Captura Menu](<ScreenShoots/Captura Menu .png>)
+![Captura Menu](<ScreenShoots/cap2.png>)
 
 ### Registro de Producto
-![Captura Registro](<ScreenShoots/Captura Registro.png>)
+![Captura Registro](<ScreenShoots/cap3.png>)
 
 ### Selector Cupertino de Categoría
-![Captura Registro Cupertino](<ScreenShoots/Captura Registro CUpertino.png>)
+![Captura Registro Cupertino](<ScreenShoots/cap4.png>)
 
 ### Selector Cupertino de Fecha
-![Captura Registro Cupertino 2](<ScreenShoots/Captura Registro CUpertino 2.png>)
+![Captura Registro Cupertino 2](<ScreenShoots/cap5.png>)
 
 ### Lista de Productos
-![Captura Registro Lista de Productos](<ScreenShoots/Captura Registro Lista de Productos.png>)
+![Captura Registro Lista de Productos](<ScreenShoots/cap6.png>)
 
 ### Editar Perfil
-![Captura Edit Profile](<ScreenShoots/Captura Edit Profile.png>)
+![Captura Edit Profile](<ScreenShoots/cap7.png>)
