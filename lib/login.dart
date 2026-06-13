@@ -32,7 +32,7 @@ class LoginPage extends StatelessWidget {
               ),
               const SizedBox(height: 28),
               const Text(
-                'BodegaFMAS',
+                'RetroStore',
                 style: TextStyle(
                   color: AppColors.darkText,
                   fontSize: 36,

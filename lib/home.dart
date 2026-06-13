@@ -53,7 +53,7 @@ class _HomePageState extends State<HomePage> {
       navigationBar: CupertinoNavigationBar(
         backgroundColor: AppColors.darkText,
         middle: const Text(
-          'BodegaFMAS',
+          'RetroStore',
           style: TextStyle(
             color: AppColors.surface,
             fontWeight: FontWeight.w800,
@@ -61,7 +61,6 @@ class _HomePageState extends State<HomePage> {
         ),
         trailing: CupertinoButton(
           padding: EdgeInsets.zero,
-          minimumSize: Size.zero,
           onPressed: () {
             Navigator.of(context).pushAndRemoveUntil(
               CupertinoPageRoute(builder: (_) => const LoginPage()),
@@ -156,7 +155,6 @@ class _CupertinoNavButton extends StatelessWidget {
 
     return CupertinoButton(
       padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 4),
-      minimumSize: Size.zero,
       onPressed: onPressed,
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 180),
@@ -285,7 +283,7 @@ class _MenuTile extends StatelessWidget {
             width: 48,
             height: 48,
             decoration: BoxDecoration(
-              color: item.color.withValues(alpha: 0.15),
+              color: item.color.withOpacity(0.15),
               shape: BoxShape.circle,
             ),
             child: Icon(item.icon, color: item.color),

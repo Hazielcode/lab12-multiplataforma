@@ -3,23 +3,23 @@ import 'package:flutter/cupertino.dart';
 import 'login.dart';
 
 void main() {
-  runApp(const BodegaFmasApp());
+  runApp(const RetroStoreApp());
 }
 
-class BodegaFmasApp extends StatelessWidget {
-  const BodegaFmasApp({super.key});
+class RetroStoreApp extends StatelessWidget {
+  const RetroStoreApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const CupertinoApp(
       debugShowCheckedModeBanner: false,
-      title: 'BodegaFMAS',
-      theme: CupertinoThemeData(
-        brightness: Brightness.light,
-        primaryColor: Color(0xFF007878),
-        scaffoldBackgroundColor: Color(0xFFF0F0D8),
+      title: 'RetroStore',
+      theme: const CupertinoThemeData(
+        brightness: Brightness.dark,
+        primaryColor: Color(0xFFFF00FF),
+        scaffoldBackgroundColor: Color(0xFF1A1A2E),
         textTheme: CupertinoTextThemeData(
-          textStyle: TextStyle(fontFamily: 'Arial', color: Color(0xFF184848)),
+          textStyle: TextStyle(fontFamily: 'Courier', color: Color(0xFF00FF41)),
         ),
       ),
       home: LoginPage(),

@@ -3,17 +3,17 @@ import 'package:flutter/cupertino.dart';
 class AppColors {
   const AppColors._();
 
-  static const background = Color(0xFFF0F0D8);
-  static const primary = Color(0xFF007878);
-  static const secondary = Color(0xFFA8C030);
-  static const surface = Color(0xFFFFFDC0);
-  static const danger = Color(0xFFCA221F);
-  static const darkText = Color(0xFF184848);
-  static const deepTeal = Color(0xFF006060);
-  static const greenTeal = Color(0xFF00755C);
-  static const lightBorder = Color(0xFFB9D7A1);
-  static const loadingBackground = Color(0xFF002E34);
-  static const neonGreen = Color(0xFF90FF17);
+  static const background = Color(0xFF1A1A2E); // Dark background
+  static const primary = Color(0xFFFF00FF); // Neon Pink
+  static const secondary = Color(0xFF00FFFF); // Cyan
+  static const surface = Color(0xFF16213E); // Dark surface
+  static const danger = Color(0xFFFF2A2A); // Bright Red
+  static const darkText = Color(0xFF00FF41); // Terminal Green
+  static const deepTeal = Color(0xFFE94560); // Neon Pink/Redish
+  static const greenTeal = Color(0xFF00FFFF); // Cyan
+  static const lightBorder = Color(0xFFFF00FF); // Pink
+  static const loadingBackground = Color(0xFF1A1A2E);
+  static const neonGreen = Color(0xFF39FF14);
 }
 
 class AppTextField extends StatelessWidget {
@@ -46,9 +46,9 @@ class AppTextField extends StatelessWidget {
         child: Icon(icon, color: AppColors.primary),
       ),
       decoration: BoxDecoration(
-        color: CupertinoColors.white,
+        color: AppColors.surface,
         borderRadius: BorderRadius.circular(14),
-        border: Border.all(color: CupertinoColors.transparent),
+        border: Border.all(color: AppColors.lightBorder),
       ),
     );
   }
@@ -76,13 +76,13 @@ class AppCard extends StatelessWidget {
       margin: margin,
       padding: padding,
       decoration: BoxDecoration(
-        color: CupertinoColors.white,
+        color: AppColors.surface,
         borderRadius: BorderRadius.circular(18),
-        border: border,
+        border: border ?? Border.all(color: AppColors.lightBorder.withOpacity(0.3)),
         boxShadow: shadow
             ? [
                 BoxShadow(
-                  color: CupertinoColors.black.withValues(alpha: 0.06),
+                  color: AppColors.primary.withOpacity(0.2),
                   blurRadius: 14,
                   offset: const Offset(0, 8),
                 ),

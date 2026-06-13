@@ -275,7 +275,6 @@ class _PickerSheet extends StatelessWidget {
                   ),
                   CupertinoButton(
                     padding: EdgeInsets.zero,
-                    minimumSize: Size.zero,
                     onPressed: onDone,
                     child: const Text(
                       'Listo',
