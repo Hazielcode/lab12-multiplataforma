@@ -1,10 +1,10 @@
-# Lab12_Fernando_Mas - RetroStore (Implementación con Cupertino)
+# Lab12_RetroStore (Implementación con Cupertino)
 
 Este laboratorio implementa el diseño de una aplicación de inventario, utilizando **componentes de Cupertino** para brindar una apariencia y navegación estilo iOS, y aplicando un renovado **Tema Retro / Cyberpunk**.
 
 ## Resumen de Cambios (Lo que hicimos)
 
-1. **Nuevo Nombre y Marca:** Se renombró la aplicación de `BodegaFMAS` a **`RetroStore`**.
+1. ** Nombre y Marca:** la aplicación**`RetroStore`**.
 2. **Transformación Visual (Estilo Cyberpunk/Retro):**
    - **Fondos Oscuros:** Cambio radical del fondo a tonos morado oscuro y azul marino (`0xFF1A1A2E`, `0xFF16213E`) estilo terminal.
    - **Tonos Neón:** Uso intenso de **Fucsia Neón** (`0xFFFF00FF`) y **Cyan** (`0xFF00FFFF`) en botones, bordes, íconos y contenedores interactivos.
@@ -30,8 +30,6 @@ Este laboratorio implementa el diseño de una aplicación de inventario, utiliza
 La aplicación simula el control de inventario llamado **RetroStore**. Permite iniciar sesión, mostrar una carga breve, navegar por un menú principal, registrar productos, interactuar con selectores nativos Cupertino (fecha y categoría), ver un listado de productos y editar el perfil del usuario.
 
 ## Capturas
-
-*(La apariencia actual con el nuevo Modo Retro se encuentra documentada aquí abajo)*
 
 ### Login
 ![Captura Login](<ScreenShoots/cap1.png>)
